@@ -1,6 +1,7 @@
 
 import { useState } from 'react'
 import './App.css'
+import Button from './Component/Button'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +12,9 @@ function App() {
       <p>This is a simple React application to demonstrate testing with Jest.</p>
       <hr />
       <h3>{count}</h3>
-      <button onClick={() =>setCount(count+1)}>Click Me</button>
+      <Button onClick={() => setCount(count + 1)}>
+        Increment
+      </Button>
     </>
   )
 }
